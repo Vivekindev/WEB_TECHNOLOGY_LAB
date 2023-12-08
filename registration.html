@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: none;
+            
+        }
+        body {
+            font-family: Arial, sans-serif;
+            
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        select{
+           
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        
+        }
+        .buttonn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            font-weight: 600;
+            border-radius: 4px;
+            cursor: pointer;
+            height: 6vh;
+            width: 25rem;
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            margin-left: 0;
+        }
+        .navbutton{
+           
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            font-weight: 600;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            height: 5vh;
+            width: 5rem;
+            margin-right: 1rem;
+        
+        }
+        .nav{
+           padding: 0.5rem;
+          align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+         width: 100%;
+         height: 5vh;
+         background-color: #3f6184;
+color: white;
+font-weight: 600;
+font-size: 1.8rem;
+        }
+        .formm{
+            margin: 1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+REGISTER
+<a href="/index.html"><button type="button" class="navbutton">Home</button></a>
+
+</div>
+<div class="formm">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+       
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="8" cols="51"></textarea>
+
+        <button type="submit" class="buttonn">Register</button>
+    </form>
+
+</div>
+    
+
+</body>
+</html>
